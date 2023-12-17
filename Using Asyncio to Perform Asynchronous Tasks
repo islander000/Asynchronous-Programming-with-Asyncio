@@ -1,0 +1,13 @@
+import asyncio
+
+async def greet(name):
+    await asyncio.sleep(1)
+    return f"Hello, {name}!"
+
+async def main():
+    result1 = await greet("Alice")
+    result2 = await greet("Bob")
+    print(result1)
+    print(result2)
+
+asyncio.run(main())
